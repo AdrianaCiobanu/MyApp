@@ -1,5 +1,0 @@
-version: '20.10.14'
-services:
-  app:
-    build: .
-    command: python hello.py
