@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  flask:   
+    image: flask_app_app
+    build: .
+    ports:
+      - "80"
+    
+    command: python hello.py
+    
+    
+
+  angular-api:
+    image: angular-app
+    build: .
+    ports:
+      - "8080:80"
+    
+
+volumes:
+  my-vol:
+
